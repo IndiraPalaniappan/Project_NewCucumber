@@ -18,7 +18,7 @@ public void launch(Scenario scenario)
 {
 	System.out.println("Hooks Before Method");
 	ca.launchURL();
-	final byte[] bef=((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+	final byte[] bef=((TakesScreenshot)driver).getScreenshotAs(OutputType.BYTES);
 	scenario.embed(bef, "image/png");
 	
 	
